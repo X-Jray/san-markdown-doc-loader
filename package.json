@@ -1,6 +1,6 @@
 {
   "name": "san-markdown-doc-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "load markdown file as a san component",
   "main": "lib/index.js",
   "directories": {
@@ -22,8 +22,7 @@
   ],
   "author": "leon <ludafa@outlook.com>",
   "license": "ISC",
-  "bugs": {
-  },
+  "bugs": {},
   "dependencies": {
     "babel-core": "^6.24.1",
     "babel-traverse": "^6.24.1",
