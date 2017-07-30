@@ -1,6 +1,6 @@
 {
-  "name": "san-markdown-loader",
-  "version": "1.0.0-alpha.7",
+  "name": "san-markdown-doc-loader",
+  "version": "1.0.0",
   "description": "load markdown file as a san component",
   "main": "lib/index.js",
   "directories": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jinzhubaofu/san-markdown-loader.git"
+    "url": "git+https://github.com/X-Jray/san-markdown-doc-loader.git"
   },
   "keywords": [
     "san",
@@ -23,9 +23,7 @@
   "author": "leon <ludafa@outlook.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jinzhubaofu/san-markdown-loader/issues"
   },
-  "homepage": "https://github.com/jinzhubaofu/san-markdown-loader#readme",
   "dependencies": {
     "babel-core": "^6.24.1",
     "babel-traverse": "^6.24.1",
@@ -47,7 +45,7 @@
   "devDependencies": {
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
     "css-loader": "^0.25.0",
     "expect.js": "^0.3.1",
     "gulp": "^3.9.1",

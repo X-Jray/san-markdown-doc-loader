@@ -50,11 +50,14 @@ module.exports = function (options) {
 
     delete options.preset;
     delete options.use;
+    
 
-    let renderer = markdown.renderer;
+    let md = markdown(preset, options);
+
+    let renderer = md.renderer;
     let renderAttrs = renderer.renderAttrs;
 
-    markdown.renderer.renderAttrs = function (token) {
+    md.renderer.renderAttrs = function (token) {
 
         if (token.nesting === -1) {
             return '';
@@ -83,8 +86,6 @@ module.exports = function (options) {
         return renderAttrs.call(renderer, token);
 
     };
-
-    let md = markdown(preset, options);
 
     if (plugins && plugins.length) {
         plugins.forEach(plugin => {

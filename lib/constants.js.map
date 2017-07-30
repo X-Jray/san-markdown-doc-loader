@@ -1,0 +1,1 @@
+{"version":3,"sources":["constants.js"],"names":["exports","CODE_BLOCK_NAME"],"mappings":";;AAAA;;;;;AAKAA,QAAQC,eAAR,GAA0B,gBAA1B","file":"constants.js","sourcesContent":["/**\n * @file constants\n * @author leon <ludafa@outlook.com>\n */\n\nexports.CODE_BLOCK_NAME = 'san-code-block';\n"]}
