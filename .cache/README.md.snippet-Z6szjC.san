@@ -1,0 +1,25 @@
+
+    <template>
+    <section>
+        <button disabled>{{name}}</button>
+        <san-divider kaixin disabled></san-divider>
+        hello <input value="{=name=}">, <button on-click="ok">ok</button>
+    <section>
+</section></section></template>
+<script>
+import Divider from '../example/Divider';
+import text from 'html-loader!../example/text.txt';
+export default {
+    initData() {
+        return {
+            name: text
+        };
+    },
+    components: {
+        'san-divider': Divider
+    },
+    ok() {
+        alert(this.data.get('name'));
+    }
+};</script>
+

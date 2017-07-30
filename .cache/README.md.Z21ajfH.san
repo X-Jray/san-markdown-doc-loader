@@ -1,0 +1,98 @@
+<template><section class="san-markdown-loader-wrapper"><h2 class="md heihei">aaaa</h2>
+<p class="md heihei">卧槽，终于搞起来了。。。</p>
+<ul class="md heihei">
+<li class="md heihei">
+<p class="md heihei">1</p>
+</li>
+<li class="md heihei">
+<p class="md heihei">2</p>
+
+<san-code-block title="test" content="&lt;template&gt;
+    &lt;div&gt;
+        &lt;button myAttrs=&quot;111&quot; class=&quot;test&quot; on-click=&quot;minus&quot; disabled=&quot;disabled&quot;&gt;-&lt;/button&gt;
+        &#x7B;&#x7B;count&#x7D;&#x7D;
+        &lt;button class=&quot;test&quot; on-click=&quot;add&quot;&gt;+&lt;/button&gt;
+        &lt;div class=&quot;test-test&quot;&gt;
+            another button &lt;san-button primaryText=&quot;12321&quot;&gt;aaa&lt;/san-button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import Button from &#39;./Button&#39;;
+export default {
+    components: {
+        &#39;san-button&#39;: Button
+    },
+    initData() {
+        return {
+            count: 1
+        };
+    },
+    inited() {
+        console.log(12321);
+    },
+    add() {
+        this.data.set(&#39;count&#39;, this.data.get(&#39;count&#39;) + 1);
+    },
+    minus() {
+        this.data.set(&#39;count&#39;, this.data.get(&#39;count&#39;) - 1);
+    }
+};
+&lt;/script&gt;
+&lt;style&gt;
+.test {
+    color: rgb(0, 159, 147)
+}
+&lt;/style&gt;
+"><readmemdsnippetvpft9></readmemdsnippetvpft9></san-code-block>
+</li>
+</ul>
+<hr class="md heihei">
+
+<san-code-block title="another silly demo" content="&lt;template&gt;
+    &lt;section&gt;
+        &lt;button disabled&gt;&#x7B;&#x7B;name&#x7D;&#x7D;&lt;/button&gt;
+        &lt;san-divider kaixin disabled /&gt;
+        hello &lt;input value={=name=} /&gt;, &lt;button on-click=&quot;ok&quot;&gt;ok&lt;/button&gt;
+    &lt;section&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import Divider from &#39;./Divider&#39;;
+import text from &#39;html-loader!./text.txt&#39;;
+export default {
+    initData() {
+        return {
+            name: text
+        };
+    },
+    components: {
+        &#39;san-divider&#39;: Divider
+    },
+    ok() {
+        alert(this.data.get(&#39;name&#39;));
+    }
+};
+&lt;/script&gt;
+"><readmemdsnippetz6szjc></readmemdsnippetz6szjc></san-code-block>
+<pre><code class="language-js md heihei"><span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;
+</code></pre>
+<pre><code class="language-sh md heihei">npm install
+</code></pre>
+<style>
+.test-test > * {
+    color: rgb(0, 159, 147)
+}
+</style>
+</section></template>
+<script>
+    import Readmemdsnippetz6szjc from './README.md.snippet-Z6szjC.san';
+import Readmemdsnippetvpft9 from './README.md.snippet-vPft9.san';
+import SanCodeBlock from '../src/component/SanCodeBlock.js';
+export default {
+    components: {
+        'san-code-block': SanCodeBlock,
+        'readmemdsnippetz6szjc': Readmemdsnippetz6szjc,
+'readmemdsnippetvpft9': Readmemdsnippetvpft9
+    }
+};
+</script>
